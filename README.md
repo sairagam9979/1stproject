@@ -1,4 +1,4 @@
-# 1stproject
+# Sorting visualiser
 This project is an interactive web application designed to demonstrate three fundamental sorting algorithms: Bubble Sort, Insertion Sort, and Selection Sort. Each algorithm is implemented in JavaScript, allowing users to visualize how these algorithms sort an array of numbers step by step.
 
 Certainly! Here’s a concise explanation of the sorting algorithms project that you've built using HTML, CSS, and JavaScript:
