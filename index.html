@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithms Explained</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Optional: Link to a CSS file -->
+</head>
+<body>
+
+    <h1>Sorting Algorithms Explained</h1>
+
+    <!-- Array Input Section -->
+    <div class="input-section">
+        <label for="arrayInput">Enter an array (comma-separated):</label>
+        <input type="text" id="arrayInput" placeholder="e.g. 64, 34, 25, 12">
+    </div>
+
+    <!-- Bubble Sort Section -->
+    <div class="sort-section" id="bubble-sort">
+        <h2>Bubble Sort</h2>
+        <p>
+            <strong>Bubble Sort</strong> is a simple sorting algorithm that repeatedly steps through the list,
+            compares adjacent elements, and swaps them if they are in the wrong order. The pass through the list
+            is repeated until the list is sorted.
+        </p>
+        <p><strong>Time Complexity:</strong> O(n²) in worst and average cases.</p>
+        <p><strong>How it works:</strong> It works by repeatedly comparing adjacent pairs of elements and swapping them if they are in the wrong order.</p>
+        <button onclick="runBubbleSort()">Run Bubble Sort</button>
+        <p>Sorted Array: <span id="bubbleResult"></span></p>
+        <p>Number of Passes: <span id="bubblePasses"></span></p>
+        <h3>Passes:</h3>
+        <pre id="bubblePassDetails"></pre>
+    </div>
+
+    <!-- Insertion Sort Section -->
+    <div class="sort-section" id="insertion-sort">
+        <h2>Insertion Sort</h2>
+        <p>
+            <strong>Insertion Sort</strong> builds the final sorted array one item at a time. It works
+            similarly to how you sort playing cards in your hands.
+        </p>
+        <p><strong>Time Complexity:</strong> O(n²) in worst and average cases; O(n) in the best case (nearly sorted data).</p>
+        <p><strong>How it works:</strong> It takes each element from the unsorted section and inserts it into its correct position in the sorted section.</p>
+        <button onclick="runInsertionSort()">Run Insertion Sort</button>
+        <p>Sorted Array: <span id="insertionResult"></span></p>
+        <p>Number of Passes: <span id="insertionPasses"></span></p>
+        <h3>Passes:</h3>
+        <pre id="insertionPassDetails"></pre>
+    </div>
+
+    <!-- Selection Sort Section -->
+    <div class="sort-section" id="selection-sort">
+        <h2>Selection Sort</h2>
+        <p>
+            <strong>Selection Sort</strong> is an algorithm that repeatedly selects the smallest (or largest)
+            element from the unsorted portion of the list and swaps it with the first unsorted element.
+        </p>
+        <p><strong>Time Complexity:</strong> O(n²) for all cases.</p>
+        <p><strong>How it works:</strong> It divides the array into a sorted and an unsorted section and continuously selects the minimum element from the unsorted section.</p>
+        <button onclick="runSelectionSort()">Run Selection Sort</button>
+        <p>Sorted Array: <span id="selectionResult"></span></p>
+        <p>Number of Passes: <span id="selectionPasses"></span></p>
+        <h3>Passes:</h3>
+        <pre id="selectionPassDetails"></pre>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
